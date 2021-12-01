@@ -39,6 +39,7 @@ class ProductController extends AbstractController
         $manager->persist($product);
         $manager->flush();
 
+        
         return $this->redirectToRoute('product');
     }
 }
