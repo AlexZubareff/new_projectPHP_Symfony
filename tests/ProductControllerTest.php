@@ -11,6 +11,6 @@ class ProductControllerTest extends WebTestCase
         $client=static::createClient();
         $client->request('GET','/product');
         $this->assertResponseStatusCodeSame(200);
-        $this->assertSelectorTextContains('<div>', 'Title : product 111');
+        $this->assertSelectorTextContains('div', 'Title : product 111');
     }
 }
